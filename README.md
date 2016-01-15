@@ -9,7 +9,7 @@
 ```css
 @font-face {
   font-family: 'MyWebFont';
-  src: url('webfont.woff');
+  src: url('webfont.woff') format('woff');
 }
 .foo {
     background-inline: url(one_pixel_transparent.gif);
@@ -19,7 +19,7 @@
 ```css
 @font-face {
   font-family: 'MyWebFont';
-  src: url('data:application/x-font-woff;base64,AACH5BAEAAAAALA...==');
+  src: url('data:application/x-font-woff;base64,AACH5BAEAAAAALA...==') format('woff');
 }
 .foo {
     background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);

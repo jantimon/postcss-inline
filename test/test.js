@@ -20,6 +20,11 @@ var test = function(input, output, opts, done) {
 describe('postcss-inline-image', function() {
 
   it('should bundle images as data URIs', function(done) {
+    test('.foo { background: green url(test/assets/onepx.gif); }',
+      '.foo { background: green url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==); }', {}, done);
+  });
+
+  it('should bundle images as data URIs', function(done) {
     test('.foo { background-image: url(test/assets/onepx.gif); }',
       '.foo { background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==); }', {}, done);
   });
@@ -32,7 +37,7 @@ describe('postcss-inline-image', function() {
 
   it('should bundle files from the given base path', function(done) {
     test('.foo { background-image: url(onepx.gif); }',
-      '.foo { background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==); }', 
+      '.foo { background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==); }',
       { basePath: path.join(__dirname, 'assets')}, done);
   });
 
