@@ -1,6 +1,6 @@
 {
   "name": "postcss-inline",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "PostCSS plugin that puts fonts / and images as data URIs into your CSS",
   "keywords": [
     "postcss",

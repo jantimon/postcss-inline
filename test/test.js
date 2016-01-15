@@ -30,6 +30,12 @@ describe('postcss-inline-image', function() {
       '@font-face { font-family: "MyWebFont"; src: url(' + base64Font + '); }', {}, done);
   });
 
+  it('should bundle files from the given base path', function(done) {
+    test('.foo { background-image: url(onepx.gif); }',
+      '.foo { background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==); }', 
+      { basePath: path.join(__dirname, 'assets')}, done);
+  });
+
   it('should bundle only files matching the filter', function(done) {
     test('@font-face { font-family: "MyWebFont"; src: url(test/assets/AguafinaScript-Regular.woff); }' +
         '.foo { background-image: url(test/assets/onepx.gif); }',

@@ -37,4 +37,9 @@ postcss([ require('postcss-inline') ])
 postcss([ require('postcss-inline'){filter: /.woff$/} ])
 ```
 
+```js
+// Specify the base path for the assets
+postcss([ require('postcss-inline'){basePath: '/some/path'} ])
+```
+
 See [PostCSS] docs for examples for your environment.
