@@ -48,4 +48,9 @@ postcss([ require('postcss-inline'){filter: /.woff$/} ])
 postcss([ require('postcss-inline'){basePath: '/some/path'} ])
 ```
 
+```js
+// Delete assets after inline (use with care!)
+postcss([ require('postcss-inline'){deleteAsset: true} ])
+```
+
 See [PostCSS] docs for examples for your environment.
