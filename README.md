@@ -12,7 +12,7 @@
   src: url('webfont.woff') format('woff');
 }
 .foo {
-    background-inline: url(one_pixel_transparent.gif);
+    background-image: url(one_pixel_transparent.gif);
 }
 .bar {
     background: url(one_pixel_transparent.gif);
