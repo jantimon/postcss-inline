@@ -14,6 +14,9 @@
 .foo {
     background-inline: url(one_pixel_transparent.gif);
 }
+.bar {
+    background: url(one_pixel_transparent.gif);
+}
 ```
 
 ```css
@@ -23,6 +26,9 @@
 }
 .foo {
     background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+}
+.bar {
+    background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
 }
 ```
 
