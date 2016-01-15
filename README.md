@@ -40,17 +40,17 @@ postcss([ require('postcss-inline') ])
 
 ```js
 // Inline only woff files:
-postcss([ require('postcss-inline'){filter: /.woff$/} ])
+postcss([ require('postcss-inline')({filter: /.woff$/}) ])
 ```
 
 ```js
 // Specify the base path for the assets
-postcss([ require('postcss-inline'){basePath: '/some/path'} ])
+postcss([ require('postcss-inline')({basePath: '/some/path'}) ])
 ```
 
 ```js
 // Delete assets after inline (use with care!)
-postcss([ require('postcss-inline'){deleteAsset: true} ])
+postcss([ require('postcss-inline')({deleteAsset: true}) ])
 ```
 
 See [PostCSS] docs for examples for your environment.
