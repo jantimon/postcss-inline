@@ -6,6 +6,13 @@
 [ci-img]:  https://travis-ci.org/jantimon/postcss-inline.svg
 [ci]:      https://travis-ci.org/jantimon/postcss-inline
 
+
+# Merged into postcss-url
+
+The features of postcss-inline were merged into [postcss-url](https://github.com/postcss/postcss-url)
+
+# Deprecated
+
 ```css
 @font-face {
   font-family: 'MyWebFont';
